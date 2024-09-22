@@ -22,14 +22,14 @@ class ProductSuccessState extends ProductStates {
 
 class AddCartLoadingState extends ProductStates {}
 
-class AddCartErrorState extends ProductStates {
-  final Failures failures;
-
-  AddCartErrorState({required this.failures});
-}
-
 class AddCartSuccessState extends ProductStates {
   final AddCartResponse productResponse;
 
   AddCartSuccessState({required this.productResponse});
+}
+
+class AddCartErrorState extends ProductStates {
+  final Failures failures;
+
+  AddCartErrorState({required this.failures});
 }
